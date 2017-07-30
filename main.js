@@ -117,20 +117,20 @@ $( ".picPlan22" )
     $(".plan3").removeClass('plan3--active');
   });
 var width = screen.width;
-if(width > "768"){
-  console.log("width badi hai")
-  $(function() {
-    $.scrollify({
-        section : ".section",
-        scrollSpeed: 1100,
-        offset : 0,
-        scrollbars: false,
-        touchScroll:true,
-        overflowScroll: true,
-        setHeights: false,
-    });
-  });
-}
+// if(width > "768"){
+//   console.log("width badi hai")
+//   $(function() {
+//     $.scrollify({
+//         section : ".section",
+//         scrollSpeed: 1100,
+//         offset : 0,
+//         scrollbars: false,
+//         touchScroll:true,
+//         overflowScroll: true,
+//         setHeights: false,
+//     });
+//   });
+// }
 console.log(width);
 if(width > "768"){
   $(".first--head1").blast({ delimiter: "character" });
