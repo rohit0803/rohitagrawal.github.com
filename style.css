@@ -633,3 +633,9 @@ span{
     color: white;
     text-align: center;
 }
+@media screen and (max-width: 992px){
+	.fifth--head1{
+	margin-top: 10px;
+
+	}
+}
