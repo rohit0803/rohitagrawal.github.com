@@ -72,7 +72,9 @@ if(width<"1200"){
   $("#work11").removeClass("work1--right");
   $("#work2").removeClass("work2--right");
   $("#work22").removeClass("work2--left");
+  
 }
+
 var element_position2 = $('#fourth').offset().top;
 var screen_height2 = $(window).height();
 var activation_offset2 = 0.5;//determines how far up the the page the element needs to be before triggering the function
@@ -91,12 +93,12 @@ $(window).on('scroll', function() {
     if(element_in_view2 || has_reached_bottom_of_page2) {
         //Do something
         if(width>"1200"){
-              $(".work1--left").addClass("work1--left--active");
-              $(".work1--right").addClass("work1--right--active");
-              $(".work2--left").addClass("work2--left--active");
-              $(".work2--right").addClass("work2--right--active");
+              $("#work1").addClass("work1--left--active");
+              $("#work11").addClass("work1--right--active");
+              $("#work22").addClass("work2--left--active");
+              $("#work2").addClass("work2--right--active");
         }
-
+        
     }
 });
 $(window).bind("load", function(){ 
@@ -140,6 +142,28 @@ if(width > "768"){
     }
   );
 };
+$( ".picTranxact" )
+  .mouseover(function() {
+    $(".tranx2").addClass('tranx2--active');
+    $(".tranx1").addClass('tranx1--active');
+    $(".tranx3").addClass('tranx3--active');
+  })
+  .mouseout(function() {
+    $(".tranx2").removeClass('tranx2--active');
+    $(".tranx1").removeClass('tranx1--active');
+    $(".tranx3").removeClass('tranx3--active');
+  });
+$( ".picPlan22" )
+  .mouseover(function() {
+    $(".plan2").addClass('plan2--active');
+    $(".plan1").addClass('plan1--active');
+    $(".plan3").addClass('plan3--active');
+  })
+  .mouseout(function() {
+    $(".plan2").removeClass('plan2--active');
+    $(".plan1").removeClass('plan1--active');
+    $(".plan3").removeClass('plan3--active');
+  });
 // (function() {
 
 //     var width, height, largeHeader, canvas, ctx, points, target, animateHeader = true;
