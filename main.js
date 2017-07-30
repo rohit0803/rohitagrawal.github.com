@@ -49,7 +49,11 @@ var max_scroll_height = $('body').height() - screen_height - 5;//-5 for a little
 
 //Does something when user scrolls to it OR
 //Does it when user has reached the bottom of the page and hasn't triggered the function yet
-
+function clickplan22(){
+  var answer = confirm ("The website is under development and will be available soon. Click OK to go to older version.");
+  if (answer)
+    window.open("http://plan22.in", "_blank");
+}
 $(window).on('scroll', function() {
     var y_scroll_pos = window.pageYOffset;
 
@@ -73,6 +77,16 @@ if(width<"1200"){
   $("#work2").removeClass("work2--right");
   $("#work22").removeClass("work2--left");
   
+}
+if(width<"450"){
+  $(".facebook").removeClass("col-xs-3");
+  $(".github").removeClass("col-xs-3");
+  $(".stack").removeClass("col-xs-3");
+  $(".google").removeClass("col-xs-3");
+  $(".facebook").addClass("col-xs-6");
+  $(".github").addClass("col-xs-6");
+  $(".stack").addClass("col-xs-6");
+  $(".google").addClass("col-xs-6");
 }
 
 var element_position2 = $('#fourth').offset().top;
@@ -502,8 +516,3 @@ circle4.text.style.fontSize = '2rem';
 
 
 
-function clickplan22(){
-  var answer = confirm ("The website is under development and will be available soon. Click OK to go to previous version.");
-  if (answer)
-    window.open("http://plan22.in", "_blank");
-}

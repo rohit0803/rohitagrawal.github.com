@@ -640,3 +640,26 @@ span{
 
 	}
 }
+.facebook{
+	text-align: center;
+	color: #6356E5;
+	font-weight: bold;
+}
+.github{
+	text-align: center;
+	color: #00ab6c;
+	font-weight: bold;
+}
+.stack{
+	text-align: center;
+	color: dimgrey;
+	font-weight: bold;
+}
+.google{
+	text-align: center;
+	color: #f48024;
+	font-weight: bold;
+}
+@media screen and (max-width: 450px){
+
+}
