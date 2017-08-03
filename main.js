@@ -71,6 +71,10 @@ $(window).on('scroll', function() {
     }
 });
 var width = screen.width;
+var height= screen.height;
+if(height<"410"){
+  $(".scroll-btn").addClass("scroll-btn--small");
+}
 if(width<"1200"){
   $("#work1").removeClass("work1--left");
   $("#work11").removeClass("work1--right");

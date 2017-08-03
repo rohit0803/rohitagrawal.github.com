@@ -17,15 +17,16 @@ span{
 }	
 
 .first{
-	padding-top: 10%;
     position: absolute;
     top: 0;
     z-index: 21;
     width: 100%;
-	padding-top:10%;
+	padding-top:0%;
+	min-height: 410px;
 }
 .first--container{
 	z-index: 2;
+	padding-top: 10%;
 	font-family: 'Nunito Sans', sans-serif;
 	margin-top: 2.5em;
 	padding-right: 15px;
@@ -138,6 +139,9 @@ span{
 	text-align: center;
 	top: 80vh;
 	z-index: 2;
+}
+.scroll-btn--small{
+	display: none;
 }
 .scroll-btn > * {
 	display: inline-block;
@@ -523,23 +527,33 @@ span{
 	}
 	.work2-left{
 	margin-top: 15em;
+
 }
-}
-@media screen and (max-width: 470px){
-	.tranx12{
-		left: -80px;
-	}
-	.tranx32{
-		left: 80px;
-	}
 	.plan12{
-		transform: translateX(-20%);
+		transform: translateX(-15%);
 	}
 	.plan22{
 		transform: translateX(0%);
 	}
 	.plan32{
-		transform: translateX(20%);
+		transform: translateX(15%);
+	}
+}
+@media screen and (max-width: 470px){
+	.tranx12{
+		left: -70px;
+	}
+	.tranx32{
+		left: 70px;
+	}
+	.plan12{
+		transform: translateX(-10%);
+	}
+	.plan22{
+		transform: translateX(0%);
+	}
+	.plan32{
+		transform: translateX(10%);
 	}
 }
 .plan1{
