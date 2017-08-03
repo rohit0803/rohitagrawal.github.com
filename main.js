@@ -400,7 +400,7 @@ var circle1 = new ProgressBar.Circle(html, {
   from: {color: '#FFEA82',width: 2},
   to: {color: '#ED6A5A',width: 6},
   // Set default step function for all animate calls
-  step: (state, circle1) => {
+  step: function(state, circle1){
     circle1.path.setAttribute('stroke', state.color);
     circle1.path.setAttribute('stroke-width', state.width);
     var value = "HTML/CSS";
@@ -433,7 +433,7 @@ var circle2 = new ProgressBar.Circle(javascript, {
   from: {color: '#FFEA82',width: 2},
   to: {color: '#ED6A5A',width: 6},
   // Set default step function for all animate calls
-  step: (state, circle2) => {
+  step: function(state, circle2) {
     circle2.path.setAttribute('stroke', state.color);
     circle1.path.setAttribute('stroke-width', state.width);
 
@@ -467,7 +467,7 @@ var circle3 = new ProgressBar.Circle(React, {
   from: {color: '#FFEA82',width: 2},
   to: {color: '#ED6A5A',width: 6},
   // Set default step function for all animate calls
-  step: (state, circle3) => {
+  step: function(state, circle3) {
     circle3.path.setAttribute('stroke', state.color);
     circle1.path.setAttribute('stroke-width', state.width);
 
@@ -501,7 +501,7 @@ var circle4 = new ProgressBar.Circle(angular, {
   from: {color: '#FFEA82',width: 2},
   to: {color: '#ED6A5A',width: 6},
   // Set default step function for all animate calls
-  step: (state, circle4) => {
+  step: function(state, circle4){
     circle4.path.setAttribute('stroke', state.color);
     circle1.path.setAttribute('stroke-width', state.width);
 
